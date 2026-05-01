@@ -332,7 +332,7 @@ function addPhotos(input){
     grid.appendChild(slot);
   });input.value='';
 }
-function addVideos(input)
+function addVideos(input){
   const list = document.getElementById('videoList');
 
   Array.from(input.files).forEach(file => {
@@ -350,7 +350,7 @@ function addVideos(input)
 
   input.value = '';
 }
-}
+
 function launchConfetti(){
   const c=document.getElementById('bdConfetti');const ctx=c.getContext('2d');c.width=c.offsetWidth||800;
   const pieces=Array.from({length:70},()=>({x:Math.random()*c.width,y:-10,r:Math.random()*6+3,color:['#f472b6','#fb923c','#a78bfa','#fde68a','#fecdd3','#fff'][Math.floor(Math.random()*6)],speed:Math.random()*3+1,angle:Math.random()*Math.PI*2,spin:Math.random()*.1-.05,dx:Math.random()*2-1}));
